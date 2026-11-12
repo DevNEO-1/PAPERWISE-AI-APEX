@@ -9,6 +9,15 @@
 
 **PAPERWISE AI APEX** is a luxury, production-grade AI research intelligence workstation designed to synthesize dense academic papers (PDF) into verified, structured research dossiers with page-level citations and rigorous document grounding.
 
+---
+
+## 🌐 Public Live Deployment
+
+- **Public Live Application:** [https://paperwise-ai-apex.streamlit.app/](https://paperwise-ai-apex.streamlit.app/)
+- **Official GitHub Repository:** [https://github.com/DevNEO-1/PAPERWISE-AI-APEX](https://github.com/DevNEO-1/PAPERWISE-AI-APEX)
+- **Deployment Platform:** Streamlit Community Cloud
+- **Runtime Environment:** Python 3.11 with Linux container environment
+
 ### Key Highlights:
 - **Server-Side Zero-Leakage Security:** The frontend contains zero API key inputs or credential fields. All API keys are loaded strictly server-side via `.env` or Streamlit secrets.
 - **Single Centralized Model Engine & Active Fallback Cascade:** Powered by **Google Gemini 3.5 Flash-Lite** (`gemini-3.5-flash-lite`) as primary, backed by an active, supported fallback cascade:
@@ -101,7 +110,7 @@ GEMINI_MODEL=gemini-3.5-flash-lite
 
 > **Security Note:** The `.env` file is excluded from Git via `.gitignore`. The web application will never display, prompt for, or expose your API key.
 
-### 3. Launch the Application
+### 3. Launch the Application Locally
 
 ```bash
 streamlit run app.py
@@ -111,6 +120,23 @@ The application will launch at:
 ```
 http://localhost:8501
 ```
+
+### 4. Deploy to Streamlit Community Cloud
+
+1. Fork or push this repository to your GitHub account (`DevNEO-1/PAPERWISE-AI-APEX`).
+2. Log into [Streamlit Community Cloud](https://share.streamlit.io/) with your GitHub account.
+3. Click **Create app** (or **Deploy an app**):
+   - **Repository:** `DevNEO-1/PAPERWISE-AI-APEX`
+   - **Branch:** `main`
+   - **Main file path:** `app.py`
+4. Under **Advanced settings**:
+   - Select **Python 3.11** (or 3.12).
+   - In the **Secrets** section, configure your Google Gemini API key:
+     ```toml
+     GEMINI_API_KEY = "your_actual_gemini_api_key_here"
+     ```
+5. Click **Deploy!** The cloud deployment will build, install `requirements.txt`, and launch automatically.
+
 
 ---
 
