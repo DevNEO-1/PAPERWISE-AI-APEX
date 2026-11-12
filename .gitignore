@@ -1,0 +1,52 @@
+# Environment Variables & Secrets
+.env
+.env.*
+*.env
+key.env
+*.key
+*.pem
+.streamlit/secrets.toml
+!.env.example
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing & Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Temporary, Logs and Working Files
+tmp/
+temp/
+scratch/
+*.log
+streamlit_*.log
+
+# Distribution & Submission archives
+*.zip
+dist/
+build/
+*.egg-info/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Generated Files
+.DS_Store
+Thumbs.db

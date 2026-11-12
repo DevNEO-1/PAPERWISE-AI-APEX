@@ -1,0 +1,141 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [ 4 0 R 6 0 R 8 0 R ] /Count 3 >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 1224 >>
+stream
+BT
+/F1 11 Tf
+50 750 Td
+16 TL
+(Attention-Driven Multi-Scale Representation Learning for Document Intelligence) Tj
+T*
+(Dr. Elena Vance, Dr. Marcus Thorne, Sophia Lin) Tj
+T*
+(Department of Computer Science, Institute of Advanced Technology) Tj
+T*
+() Tj
+T*
+(ABSTRACT) Tj
+T*
+(Academic document understanding requires joint reasoning over dense typographic layouts and semantic text.) Tj
+T*
+(Existing vision-language models frequently suffer from spatial misalignment and high computational complexity.) Tj
+T*
+(In this work, we present DocScale, a novel multi-scale self-attention architecture tailored for document parsing.) Tj
+T*
+() Tj
+T*
+(1. INTRODUCTION AND PROBLEM STATEMENT) Tj
+T*
+(Academic and scientific PDFs present unique challenges due to multi-column formats, mathematical equations, and inline figures.) Tj
+T*
+(Current optical character pipelines and transformer models struggle with boundary detection across contiguous pages.) Tj
+T*
+(Specifically, existing baselines fail to maintain cross-page continuity, resulting in a 24.3% error rate in multi-page reasoning.) Tj
+T*
+(Our primary objective is to resolve spatial degradation while reducing model parameter footprint by 35% without sacrificing accuracy.) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 998 >>
+stream
+BT
+/F1 11 Tf
+50 750 Td
+16 TL
+(2. METHODOLOGY AND ARCHITECTURE) Tj
+T*
+(DocScale incorporates a hierarchical cross-attention mechanism that decouples layout spatial coordinates from lexical embeddings.) Tj
+T*
+(The architecture consists of 12 encoder layers equipped with relative positional bias and gated visual pooling.) Tj
+T*
+(By computing cross-attention over multi-scale feature pyramids, the model preserves fine-grained token boundaries.) Tj
+T*
+() Tj
+T*
+(3. DATASET AND EXPERIMENTAL SETUP) Tj
+T*
+(We evaluate DocScale on the newly curated SciDoc-50k benchmark, consisting of 50,000 open-access peer-reviewed papers.) Tj
+T*
+(The dataset spans four major scientific domains: Computer Science, Physics, Bioengineering, and Computational Linguistics.) Tj
+T*
+(Data preprocessing involved standard normalization and filtering of documents with fewer than 100 tokens.) Tj
+T*
+(All models were trained on 8 NVIDIA A100 GPUs using AdamW optimizer with a learning rate of 2e-4 and cosine decay.) Tj
+T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 1129 >>
+stream
+BT
+/F1 11 Tf
+50 750 Td
+16 TL
+(4. RESULTS AND EMPIRICAL FINDINGS) Tj
+T*
+(DocScale achieves a state-of-the-art Macro F1-score of 94.6% on document layout analysis, outperforming previous baselines by 4.8%.) Tj
+T*
+(Inference throughput reached 142 pages per second on an A100 GPU, reflecting a 3.2x speedup over dense vision transformers.) Tj
+T*
+(Ablation studies confirm that multi-scale positional gates contribute 2.9% of the total F1 improvement.) Tj
+T*
+() Tj
+T*
+(5. LIMITATIONS) Tj
+T*
+(Despite strong empirical performance, DocScale exhibits several stated limitations.) Tj
+T*
+(First, the model performance degrades on historical manuscripts printed prior to 1950 due to font irregularities.) Tj
+T*
+(Second, our current implementation assumes single-language English documents and does not natively parse right-to-left scripts.) Tj
+T*
+(Third, inference memory scales quadratically for documents exceeding 100 pages, necessitating future work in linear attention.) Tj
+T*
+() Tj
+T*
+(6. CONCLUSION) Tj
+T*
+(DocScale provides an efficient, verifiable framework for scientific document summarization and semantic extraction.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000135 00000 n 
+0000000205 00000 n 
+0000000331 00000 n 
+0000001607 00000 n 
+0000001733 00000 n 
+0000002782 00000 n 
+0000002908 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+4089
+%%EOF
