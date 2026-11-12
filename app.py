@@ -7,6 +7,7 @@ Built with Streamlit, Google Gemini (google-genai SDK), and PyPDF.
 import io
 import html
 import os
+import re
 import sys
 from typing import Optional
 import streamlit as st
